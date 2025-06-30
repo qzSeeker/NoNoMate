@@ -1,100 +1,148 @@
-# 🚀 NonoMate – Your AI-Powered Internship & Career Launchpad
+# NonoMate 🚀
 
-**NonoMate** is a career-first platform built for students who don’t follow the “normal” path — especially those from Tier 2/3 colleges across India.  
-We help students land **real, paid, scam-free internships** and connect startups with verified, growth-ready talent — all powered by AI.
+> **Empowering students from Tier 2/3 colleges with AI-powered career guidance and verified internship opportunities**
 
-> ❌ No ghosting. No unpaid gigs.  
-> ✅ Just real growth, clear guidance, and verified internships.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC)](https://tailwindcss.com/)
 
----
+## 🌟 About NonoMate
 
-## 🔥 What We're Building
+NonoMate is a career-first platform designed specifically for students who don't follow the traditional path — particularly those from Tier 2 and Tier 3 colleges across India. We bridge the gap between ambitious students and quality internship opportunities through AI-powered matching and guidance.
 
-- ✅ **AI-powered career chatbot** (for personalized guidance)
-- ✅ **Resume builder + study path planner**
-- ✅ **Verified internship listings only**
-- ✅ **Startup dashboard for hiring + tracking**
-- ✅ **Mentorship ecosystem for 1:1 guidance**
+### 🎯 Our Mission
+- **Eliminate scam internships** and unpaid exploitation
+- **Connect verified startups** with talented students
+- **Provide personalized career guidance** through AI
+- **Level the playing field** for all students, regardless of college tier
 
----
+## ✨ Key Features
 
-## ✨ Tech Stack
+### For Students
+- 🤖 **AI Career Chatbot** - Get personalized career guidance and study plans
+- 📝 **Smart Resume Builder** - Create professional resumes with industry-specific templates
+- 🎯 **Intelligent Matching** - Get matched with internships based on your skills and goals
+- 📚 **Learning Path Planner** - Structured roadmaps for skill development
+- 👥 **1:1 Mentorship** - Connect with industry professionals
 
-- **Next.js (App Router)**
-- **Tailwind CSS**
-- **TypeScript**
-- **Framer Motion** (for animations)
-- **(Coming soon)** Firebase/Auth + Supabase + OpenAI
+### For Startups
+- 🏢 **Hiring Dashboard** - Post verified internships and manage applications
+- 📊 **Candidate Analytics** - Track and evaluate potential interns
+- ⚡ **Quick Onboarding** - Streamlined process for bringing interns aboard
+- 🔍 **Quality Assurance** - Access to pre-screened, motivated candidates
 
----
+## 🛠️ Tech Stack
 
-## 💡 Core Features
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | Next.js 14, TypeScript, Tailwind CSS |
+| **Animation** | Framer Motion |
+| **Database** | Supabase (planned) |
+| **Authentication** | Firebase Auth (planned) |
+| **AI/ML** | OpenAI API (planned) |
+| **Deployment** | Vercel |
 
-| Feature                | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| 👨‍🎓 Student Dashboard     | View personalized study plans, internship matches, and resume tools       |
-| 💬 Career Chatbot       | Ask career doubts, plan study, get guidance — all powered by AI             |
-| 📄 Resume Builder       | Simple, clean templates for export-ready resumes                            |
-| 💼 Internship Matching  | Smart AI matching for verified internships only (no scams, no cold DMs)     |
-| 🚀 Startup Hiring Portal| Post internships, manage candidates, and onboard interns                     |
+## 🚀 Getting Started
 
----
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Git
 
-## 📦 Folder Structure (WIP)
+### Installation
 
 ```bash
-app/
-├── layout.tsx         # Root layout
-├── page.tsx           # Landing page
-├── dashboard/         # Student dashboard UI
-├── chatbot/           # Chat interface
-├── auth/              # Login/signup pages
-components/
-├── ui/                # Buttons, inputs, cards
-├── chatbot/           # Chat messages, logic
-lib/                   # Helpers and utilities
-public/                # Static assets
-
----
-
-## 📲 Live Preview
-
-- (Coming Soon) — Deploying on Vercel
-
----
-
-## 🛠️ Setup Instructions
-
+# Clone the repository
 git clone https://github.com/your-username/nonomate.git
+
+# Navigate to project directory
 cd nonomate
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+## 📁 Project Structure
+
+```
+nonomate/
+├── app/
+│   ├── layout.tsx          # Root layout
+│   ├── page.tsx            # Landing page
+│   ├── dashboard/          # Student dashboard
+│   ├── chatbot/            # AI chat interface
+│   └── auth/               # Authentication pages
+├── components/
+│   ├── ui/                 # Reusable UI components
+│   └── chatbot/            # Chat-specific components
+├── lib/                    # Utilities and helpers
+├── public/                 # Static assets
+└── styles/                 # Global styles
+```
+
+## 🗺️ Roadmap
+
+- [x] Landing page design
+- [x] Basic UI components
+- [ ] AI chatbot integration
+- [ ] User authentication
+- [ ] Resume builder
+- [ ] Internship matching algorithm
+- [ ] Startup dashboard
+- [ ] Mentorship system
+- [ ] Mobile app (React Native)
+
+## 🤝 Contributing
+
+We welcome contributions from developers, designers, and anyone passionate about improving career opportunities for students.
+
+### How to Contribute
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Areas We Need Help With
+- Frontend development (React/Next.js)
+- UI/UX design
+- AI/ML integration
+- Backend development
+- Testing and QA
+- Documentation
+
+## 👨‍💻 Author
+
+**Arpit Yadav**
+- 🌍 Based in Delhi, India
+- 💼 Frontend Developer & Founder
+- 🎯 Mission: Fixing how internships work for Tier 2/3 students
+- 📧 qzseeker@gmail.com
+- 💼 www.linkedin.com/in/arpityadav2005
+- 🐦 https://x.com/qzseeker
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Thanks to all the students who shared their internship struggles and inspired this project
+- Shoutout to the startup community for believing in talent over college names
+- Special thanks to contributors and early adopters
 
 ---
 
-## 🙌 Built By
+<div align="center">
 
-- 👨‍💻 Arpit Yadav — frontend developer, founder & builder of things that solve real problems
-- 📍 Delhi, India
-- 🛠 On a mission to fix how internships work for Tier 2/3 students
+**NonoMate isn't just a platform — it's a movement to democratize career opportunities for every deserving student in India.**
 
----
+[🌟 Star this repo](https://github.com/qzSeeker/NoNoMate) • [🐛 Report Bug](https://github.com/qzSeeker/nonomate/issues) • [💡 Request Feature](https://github.com/qzSeeker/nonomate/issues)
 
-## 🤝 Contribute / Feedback
-
-- Want to contribute, suggest features, or join the mission?
-- Open an issue or DM me on LinkedIn or Instagram — let’s connect!
-
----
-
-✨ NonoMate is more than a project — it’s a movement to bring opportunity, dignity, and growth to every Indian student who deserves better.
-
-
----
-
-Let me know:
-- Your GitHub URL so I can add it in
-- If you want this written in Hindi + English mix for your audience
-- If you want help writing your first GitHub release or pinned issue for contributors
-
-Ready to help you scale it big 🚀
+</div>
