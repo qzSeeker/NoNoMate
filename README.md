@@ -1,30 +1,100 @@
-# Career mate ui design
+# 🚀 NonoMate – Your AI-Powered Internship & Career Launchpad
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+**NonoMate** is a career-first platform built for students who don’t follow the “normal” path — especially those from Tier 2/3 colleges across India.  
+We help students land **real, paid, scam-free internships** and connect startups with verified, growth-ready talent — all powered by AI.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/qzseeker-gmailcoms-projects/v0-career-mate-ui-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/dxaBkE5T6y8)
+> ❌ No ghosting. No unpaid gigs.  
+> ✅ Just real growth, clear guidance, and verified internships.
 
-## Overview
+---
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🔥 What We're Building
 
-## Deployment
+- ✅ **AI-powered career chatbot** (for personalized guidance)
+- ✅ **Resume builder + study path planner**
+- ✅ **Verified internship listings only**
+- ✅ **Startup dashboard for hiring + tracking**
+- ✅ **Mentorship ecosystem for 1:1 guidance**
 
-Your project is live at:
+---
 
-**[https://vercel.com/qzseeker-gmailcoms-projects/v0-career-mate-ui-design](https://vercel.com/qzseeker-gmailcoms-projects/v0-career-mate-ui-design)**
+## ✨ Tech Stack
 
-## Build your app
+- **Next.js (App Router)**
+- **Tailwind CSS**
+- **TypeScript**
+- **Framer Motion** (for animations)
+- **(Coming soon)** Firebase/Auth + Supabase + OpenAI
 
-Continue building your app on:
+---
 
-**[https://v0.dev/chat/projects/dxaBkE5T6y8](https://v0.dev/chat/projects/dxaBkE5T6y8)**
+## 💡 Core Features
 
-## How It Works
+| Feature                | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| 👨‍🎓 Student Dashboard     | View personalized study plans, internship matches, and resume tools       |
+| 💬 Career Chatbot       | Ask career doubts, plan study, get guidance — all powered by AI             |
+| 📄 Resume Builder       | Simple, clean templates for export-ready resumes                            |
+| 💼 Internship Matching  | Smart AI matching for verified internships only (no scams, no cold DMs)     |
+| 🚀 Startup Hiring Portal| Post internships, manage candidates, and onboard interns                     |
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+---
+
+## 📦 Folder Structure (WIP)
+
+```bash
+app/
+├── layout.tsx         # Root layout
+├── page.tsx           # Landing page
+├── dashboard/         # Student dashboard UI
+├── chatbot/           # Chat interface
+├── auth/              # Login/signup pages
+components/
+├── ui/                # Buttons, inputs, cards
+├── chatbot/           # Chat messages, logic
+lib/                   # Helpers and utilities
+public/                # Static assets
+
+---
+
+## 📲 Live Preview
+
+- (Coming Soon) — Deploying on Vercel
+
+---
+
+## 🛠️ Setup Instructions
+
+git clone https://github.com/your-username/nonomate.git
+cd nonomate
+npm install
+npm run dev
+
+---
+
+## 🙌 Built By
+
+- 👨‍💻 Arpit Yadav — frontend developer, founder & builder of things that solve real problems
+- 📍 Delhi, India
+- 🛠 On a mission to fix how internships work for Tier 2/3 students
+
+---
+
+## 🤝 Contribute / Feedback
+
+- Want to contribute, suggest features, or join the mission?
+- Open an issue or DM me on LinkedIn or Instagram — let’s connect!
+
+---
+
+✨ NonoMate is more than a project — it’s a movement to bring opportunity, dignity, and growth to every Indian student who deserves better.
+
+
+---
+
+Let me know:
+- Your GitHub URL so I can add it in
+- If you want this written in Hindi + English mix for your audience
+- If you want help writing your first GitHub release or pinned issue for contributors
+
+Ready to help you scale it big 🚀
