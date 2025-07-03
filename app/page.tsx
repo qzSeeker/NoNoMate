@@ -2,92 +2,21 @@
 
 import React from "react"
 import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Bot, BookOpen, FileText, Bell, Star, Users, TrendingUp, ArrowRight, Sparkles } from "lucide-react"
-import Link from "next/link"
-import { AuroraBackground } from "@/components/ui/aurora-background"
 import Image from "next/image"
-
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 },
-}
-
-const staggerContainer = {
-  animate: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-}
+import Hero from "@/components/Hero"
+import Features from "@/components/Features"
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark relative overflow-hidden">
-        <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
-      > 
-      {/* Hero Section */}
-      <section className="pt-[9rem] pb-20">
-        <div className="mx-auto text-center">
-            <motion.div variants={fadeInUp} className="absolute top-[4rem] md:top-12 right-0 left-0 mx-auto leading-tight mb-6 text-[3rem] md:text-[12rem] text-text-green/10">
-                Introducing
-                <span className="block text-[3.5rem] md:text-[8rem]">NoNoMate</span>
-            </motion.div>
-          <motion.div variants={staggerContainer} initial="initial" animate="animate" className="mt-6 md:mt-16 max-w-4xl w-full mx-auto">
-            <Badge
-              className="bg-text-light_green text-xs md:text-base text-background-light mb-4 shadow-text-light_green overflow-hidden shadow-2xl"
-              variant="secondary"
-            >
-              Students Who Grind.<span className="bg-background-light text-text-light_green ml-2 p-2 md:p-3 shadow-sm">Startups That Build</span>
-            </Badge>
-            <motion.h1 variants={fadeInUp} className="text-3xl md:text-5xl drop-shadow-sm font-semibold text-text-green mb-6 leading-tight">
-              No Free Labor. No Fake Offers.
-              <span className="gradient-text md:block text-text-light_green drop-shadow-sm"> Just Real Internships.</span>
-            </motion.h1>
+      {/* Hero */}
+      <Hero/>
 
-            <motion.p
-              variants={fadeInUp}
-              className="text-lg md:text-xl text-text-green mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-sm"
-            >
-              You're not just “looking for experience", you're building your future. NoNoMate connects Tier 2/3 students with legit, paid, skill-based internships at real startups. No fluff. No scams. Just serious glow-ups.
-            </motion.p>
-
-            <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center rounded-2xl w-max mx-auto bg-background-light text-lg shadow-2xl shadow-text-light_green">
-              <Link href="/auth">
-                <Button
-                  size="lg"
-                  className="bg-background-light text-lg text-text-green"
-                >
-                  Find Internships
-                </Button>
-              </Link>
-              <Link href="/auth">
-                <Button
-                  size="lg"
-                  className="bg-text-light_green rounded-xl text-lg px-8 py-6 m-2 shadow-text-light_green text-background-light hover:bg-text-green hover:text-background-light transition-colors"
-                >
-                  Hire Interns
-                </Button>
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-      </motion.div>
+      {/* Features */}
+      <Features/>
 
       {/* Why? */}
-      <section className="px-4">
+      <section className="px-4 mt-12">
         <div className="max-w-7xl mx-auto py-12">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -145,8 +74,68 @@ export default function LandingPage() {
           </h1>
         </div>
       </section>
+
+      {/* What you get? */}
+      {/* <section className="px-4">
+        <div className="max-w-7xl mx-auto py-12">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+          <h1 className="text-2xl md:text-3xl text-text-light_green font-bold mb-4">What You Get</h1>
+          </motion.div>
+          <div>
+            <h1>Real Internships, Not Fake Job Postings</h1>
+            <p>All opportunities are vetted by humans + AI. If it’s unpaid, exploitative, or shady — it’s gone.</p>
+            <Image
+              src="/what-you-get.png"
+              alt="What you get"
+              width={500}
+              height={300}
+              className="mx-auto"
+            />
+          </div>
+          <div>
+            <h1>Your Skill Path, Not Just Your CGPA</h1>
+            <p>We match you based on your skills, goals, and vibe — not just your college name or marksheet.</p>
+            <Image
+              src="/what-you-get.png"
+              alt="What you get"
+              width={500}
+              height={300}
+              className="mx-auto"
+            />
+          </div>
+          <div>
+            <h1>Tiered Growth Tracks</h1>
+            <p>Learn → Intern → Level Up → Build your resume without being a LinkedIn clone.</p>
+            <Image
+              src="/what-you-get.png"
+              alt="What you get"
+              width={500}
+              height={300}
+              className="mx-auto"
+            />
+          </div>
+          <div>
+            <h1>Mentors Who Actually Code</h1>
+            <p>Learn from real devs, founders & PMs who don’t talk in HR jargon. Just skills, feedback, and guidance.</p>
+            <Image
+              src="/what-you-get.png"
+              alt="What you get"
+              width={500}
+              height={300}
+              className="mx-auto"
+            />
+          </div>
+        </div>
+      </section> */}
+
       {/* AI Career Chatbot */}
-      <section>
+      {/* <section>
         <div className="container mx-auto px-4 py-20">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -163,10 +152,10 @@ export default function LandingPage() {
             </p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
-      <section id="features" className="py-20 px-4">
+      {/* <section id="features" className="py-20 px-4">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -183,7 +172,7 @@ export default function LandingPage() {
             </p>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
     </div>
   )

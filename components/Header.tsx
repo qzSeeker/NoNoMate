@@ -34,7 +34,7 @@ return (
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             >
-            <span className="text-xl text-text-green font-bold gradient-text">NoNoMate</span>
+            <span className="text-xl text-text-green font-bold gradient-text">Nonomate</span>
             </motion.div>
 
             <nav className="hidden text-md font-bold md:flex justify-center items-center space-x-8 rounded-2xl p-3">
