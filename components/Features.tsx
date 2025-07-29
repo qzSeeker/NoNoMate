@@ -10,14 +10,14 @@ function Features() {
                 <span className="text-text-light_green"> Designed for Startups.</span>
             </h1>
 
-            <div className="flex flex-col gap-10 relative top-16 bg-gradient-to-t from-text-green/40 to-transparent p-6 md:p-12 rounded-[6rem] md:rounded-[8rem]">
-            <div className="grid md:grid-cols-2 items-center bg-gradient-to-b from-text-green/40 to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
+            <div className="flex flex-col gap-10 relative top-14 bg-gradient-to-t from-text-green/70 to-transparent p-6 md:p-12 rounded-[6rem] md:rounded-[8rem]">
+            <div className="grid md:grid-cols-2 items-center bg-gradient-to-b from-text-green/80 via-text-green/60 to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
             <Image
                 src="/studentImg.png"
                 alt="Placeholder image"
                 height={414}
                 width={414}
-                className="rounded-[6rem] opacity-80 shadow-background-light shadow-2xl border-[4px] border-background-light/60"
+                className="rounded-[6rem] opacity-80 shadow-2xl border-[4px] border-background-light/60"
                 />
                 <div className="p-6 flex flex-col">
                     <h1 className="text-2xl md:text-3xl text-background-light font-semibold mb-8">
@@ -36,13 +36,13 @@ function Features() {
                 
             </div>
 
-            <div className="grid md:grid-cols-2 items-center bg-gradient-to-b from-text-green/40 to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
+            <div className="grid md:grid-cols-2 items-center bg-gradient-to-t from-text-green/80 via-text-green/60  to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
                 <Image
                 src="/startupImg.png"
                 alt="Placeholder image"
                 height={414}
                 width={414}
-                className="rounded-[6rem] opacity-80 shadow-background-light shadow-2xl border-[4px] border-background-light/60"
+                className="rounded-[6rem] opacity-80 shadow-2xl border-[4px] border-background-light/60"
                 />
                 <div className="p-6 flex flex-col">
                     <h1 className="text-2xl md:text-3xl text-background-light font-semibold mb-8">

@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Tenor_Sans } from "next/font/google"
+import { Jost, Tenor_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/Header"
@@ -17,6 +17,11 @@ const tenor = Tenor_Sans({
   display: "swap",
   weight: "400",
 })
+
+const jost = Jost({
+  subsets: ["latin"],
+  variable: "--font-jost",
+});
 
 export default function RootLayout({
   children,
