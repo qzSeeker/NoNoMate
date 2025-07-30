@@ -11,7 +11,7 @@ function Features() {
             </h1>
 
             <div className="flex flex-col gap-10 relative top-14 bg-gradient-to-t from-text-green/70 to-transparent p-6 md:p-12 rounded-[6rem] md:rounded-[8rem]">
-            <div className="grid md:grid-cols-2 items-center bg-gradient-to-b from-text-green/80 via-text-green/60 to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
+            <div className="grid md:grid-cols-2 items-center bg-gradient-to-b from-text-green/80 to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
             <Image
                 src="/studentImg.png"
                 alt="Placeholder image"
@@ -36,7 +36,7 @@ function Features() {
                 
             </div>
 
-            <div className="grid md:grid-cols-2 items-center bg-gradient-to-t from-text-green/80 via-text-green/60  to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
+            <div className="grid md:grid-cols-2 items-center bg-gradient-to-t from-text-green/80 to-transparent p-4 md:p-12 rounded-[6rem] md:rounded-[7rem]">
                 <Image
                 src="/startupImg.png"
                 alt="Placeholder image"

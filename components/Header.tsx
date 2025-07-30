@@ -83,83 +83,77 @@ return (
             )}
 
             {/* Modal Menu */}
-            <div
-            className={`fixed bg-[#fffef9] rounded-[2rem] shadow-xl z-50 transition-all duration-300 ease-in-out ${
-                isMobile
-                ? `bottom-0 left-0 right-0 ${
-                    isMenuOpen ? "translate-y-0" : "translate-y-full"
-                    }`
-                : `top-20 right-4 w-72 ${
-                    isMenuOpen
-                        ? "opacity-100 scale-100"
-                        : "opacity-0 scale-95 pointer-events-none"
-                    }`
-            }`}
+        <div
+        className={`fixed bg-background-light rounded-[1rem] p-2 shadow-xl border-t border-text-light_green z-50 transition-all duration-300 ease-in-out ${
+            isMobile
+            ? `bottom-0 left-0 right-0 ${isMenuOpen ? "translate-y-0" : "translate-y-full"}`
+            : `top-20 right-4 w-72 ${
+                isMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+                }`
+        }`}
+        >
+        {/* Header message */}
+        <div className="m-2 p-3 rounded-xl bg-text-light_green border flex flex-col justify-between items-center border-b">
+            <h2 className="ml-3 text-[12px] font-medium text-center text-background-light">
+            Sign in to explore internships, get personalized alerts, and build your career with NoNoMate.
+            </h2>
+        </div>
+
+        {/* Sign In Button */}
+        <div className="p-2">
+            <Button
+            className="w-full bg-text-light_green hover:bg-text-light_green/50 text-background-light rounded-xl py-2"
+            onClick={() => (window.location.href = "/login")}
             >
-            <div className="m-2 p-2 rounded-[2rem] bg-[#fffdf4]/70 border flex flex-col justify-between items-center border-b">
-                <h2 className="ml-3 text-[12px] font-medium text-center text-[#333333]">
-                Create an account or sign in to unlock personalized career
-                guidance, study plans, job alerts, and voice-enabled AI help.
-                </h2>
+            Sign in
+            </Button>
+        </div>
+
+        {/* Quick Actions */}
+        <div className="px-4 py-3 space-y-4">
+            <div className="flex justify-between items-center text-sm font-medium">
+            <div className="text-text-green">Find Internships</div>
+            <button className="text-text-light_green hover:underline" onClick={() => (window.location.href = "/internships")}>
+                Browse
+            </button>
             </div>
 
-            <div className="p-4">
-                <Button
-                className="w-full bg-[#333333] hover:bg-[#333333]/90 text-white rounded-[1rem] py-2"
-                onClick={() => (window.location.href = "/login")}
-                >
-                Sign in
-                </Button>
+            <div className="flex justify-between items-center text-sm font-medium">
+            <div className="text-text-green">Job Alerts</div>
+            <button className="text-text-light_green hover:underline" onClick={() => (window.location.href = "/alerts")}>
+                Manage
+            </button>
             </div>
 
-            <div className="px-4 py-3 space-y-4">
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Profile</div>
-                <div className="text-[#555555]">Update</div>
-                </div>
-
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Voice Assistant</div>
-                <div className="text-[#555555]">On</div>
-                </div>
-
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Language</div>
-                <div className="text-[#555555]">EN</div>
-                </div>
-
-                {/* <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Theme</div>
-                <ThemeToggle />
-                </div> */}
-
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Study Plan</div>
-                <button className="text-[#555555] hover:underline">View</button>
-                </div>
-
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Job Alerts</div>
-                <button className="text-[#555555] hover:underline">Manage</button>
-                </div>
-
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">Resume Builder</div>
-                <button className="text-[#555555] hover:underline">Start</button>
-                </div>
-
-                <div className="flex justify-between items-center text-sm font-medium">
-                <div className="text-[#333333]">About CareerMate</div>
-                <button className="text-[#555555] hover:underline">Read</button>
-                </div>
+            <div className="flex justify-between items-center text-sm font-medium">
+            <div className="text-text-green">Resume Builder</div>
+            <button className="text-text-light_green hover:underline" onClick={() => (window.location.href = "/resume-builder")}>
+                Start
+            </button>
             </div>
 
-            <div className="flex justify-center gap-4 p-4 border-t text-xs font-medium">
-                <button className="hover:text-[#333333]">Privacy</button>
-                <button className="hover:text-[#333333]">Terms</button>
-                <button className="hover:text-[#333333]">FAQ</button>
+            <div className="flex justify-between items-center text-sm font-medium">
+            <div className="text-text-green">Student Community</div>
+            <button className="text-text-light_green hover:underline" onClick={() => (window.location.href = "/community")}>
+                Join
+            </button>
             </div>
+
+            <div className="flex justify-between items-center text-sm font-medium">
+            <div className="text-text-green">Profile</div>
+            <button className="text-text-light_green hover:underline" onClick={() => (window.location.href = "/profile")}>
+                Update
+            </button>
             </div>
+        </div>
+
+        {/* Footer Links */}
+        <div className="flex justify-center gap-4 p-4 border-t text-xs font-medium">
+            <button className="hover:text-text-green" onClick={() => (window.location.href = "/privacy-policy")}>Privacy</button>
+            <button className="hover:text-text-green" onClick={() => (window.location.href = "/terms-of-service")}>Terms</button>
+            <button className="hover:text-text-green" onClick={() => (window.location.href = "/faqs")}>FAQ</button>
+        </div>
+        </div>
         </header>
     );
     }
