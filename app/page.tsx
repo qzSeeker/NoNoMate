@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Hero from "@/components/Hero"
 import Features from "@/components/Features"
-// import HowItWorks from "@/components/HowItWorks"
 import Footer from "@/components/Footer"
 
 export default function LandingPage() {
@@ -16,9 +15,6 @@ export default function LandingPage() {
 
       {/* Features */}
       <Features/>
-
-      {/* How It Works */}
-      {/* <HowItWorks/> */}
       
       {/* Why? */}
       <section className="px-4 mt-12">

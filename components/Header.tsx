@@ -148,7 +148,7 @@ return (
         </div>
 
         {/* Footer Links */}
-        <div className="flex justify-center gap-4 p-4 border-t text-xs font-medium">
+        <div className="flex justify-center gap-4 p-4 border-t border-text-light_green/20 text-xs font-medium">
             <button className="hover:text-text-green" onClick={() => (window.location.href = "/privacy-policy")}>Privacy</button>
             <button className="hover:text-text-green" onClick={() => (window.location.href = "/terms-of-service")}>Terms</button>
             <button className="hover:text-text-green" onClick={() => (window.location.href = "/faqs")}>FAQ</button>
