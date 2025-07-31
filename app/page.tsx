@@ -6,6 +6,7 @@ import Image from "next/image"
 import Hero from "@/components/Hero"
 import Features from "@/components/Features"
 import Footer from "@/components/Footer"
+import FAQSection from "@/components/Faqs"
 
 export default function LandingPage() {
   return (
@@ -76,6 +77,8 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQSection/>
       {/* Footer */}
       <Footer/>
     </div>

@@ -67,7 +67,7 @@ return (
 
                     <Button
                         type="submit"
-                        className="w-full bg-white text-text-light_green hover:bg-white/90 rounded-lg h-12 font-semibold transition-all duration-300 hover:scale-105"
+                        className="w-full bg-background-light text-text-light_green hover:bg-background-light/90 rounded-lg h-12 font-semibold transition-all duration-300"
                     >
                         <Send className="w-5 h-5 mr-2" />
                         Subscribe to Newsletter
