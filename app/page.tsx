@@ -7,6 +7,7 @@ import Hero from "@/components/Hero"
 import Features from "@/components/Features"
 import Footer from "@/components/Footer"
 import FAQSection from "@/components/Faqs"
+import Testimonials from "@/components/Testimonials"
 
 export default function LandingPage() {
   return (
@@ -76,6 +77,9 @@ export default function LandingPage() {
           </h1>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* FAQ Section */}
       <FAQSection/>

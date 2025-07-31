@@ -66,3 +66,13 @@
       350% 50%;
   }
 }
+
+@layer utilities {
+  .swiper-pagination-bullet {
+    @apply bg-gray-300 !important;
+  }
+  .swiper-pagination-bullet-active {
+    @apply bg-white !important;
+  }
+}
+
