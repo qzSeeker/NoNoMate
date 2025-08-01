@@ -41,13 +41,13 @@ const pricingPlans = [
 
 export default function PricingSection() {
     return (
-        <section className="py-20 dark:bg-neutral-950" id="pricing">
+        <section className="py-4 md:py-20 dark:bg-neutral-950" id="pricing">
         <div className="max-w-7xl mx-auto px-6">
             <motion.h2
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text dark:text-background-light"
+            className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text dark:text-background-light"
             >
             Find Your Vibe, Pick Your Plan
             </motion.h2>
