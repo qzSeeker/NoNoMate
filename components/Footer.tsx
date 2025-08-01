@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useState } from "react";
 import { TextHoverEffect } from "./ui/text-hover-effect";
-import { Heart, Mail, Rocket, Send, Users } from "lucide-react";
+import { Heart, Mail, Send } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -21,7 +23,7 @@ function Footer() {
     };
 return (
     <div className="bg-text-light_green">
-        <div className="flex flex-col md:flex-row md:items-end items-center gap-6 justify-center py-12 px-4">
+        <div className="flex flex-col md:flex-row md:items-end items-center gap-6 justify-center py-12 px-4 relative">
             {/* Newsletter Subscription */}
             <div className="">
                 <div className="">

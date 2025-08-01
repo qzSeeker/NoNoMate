@@ -52,6 +52,7 @@
 
 :root {
   --animate-aurora: aurora 60s linear infinite;
+  background-color: #ecfdf7;
 }
 
 @keyframes aurora {

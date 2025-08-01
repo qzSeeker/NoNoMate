@@ -4,17 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-    FileText,
-    Bell,
-    Star,
-    Users,
-    TrendingUp,
-    ArrowRight,
-    Sparkles,
-} from "lucide-react";
 import Link from "next/link";
-import { AuroraBackground } from "@/components/ui/aurora-background";
 
 function Hero() {
     const fadeInUp = {

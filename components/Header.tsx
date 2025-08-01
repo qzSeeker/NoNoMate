@@ -34,28 +34,36 @@ return (
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             >
+            <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl text-text-green font-bold gradient-text">Nonomate</span>
+            </Link>
             </motion.div>
 
             <nav className="hidden text-md font-bold md:flex justify-center items-center space-x-8 rounded-2xl p-3">
-            <a
-                href="#features"
-                className="text-text-light_green hover:text-text-green transition-colors"
-            >
-                Features
-            </a>
-            <a
-                href="#testimonials"
-                className="text-text-light_green hover:text-text-green transition-colors"
-            >
-                Success Stories
-            </a>
-            <a
-                href="#pricing"
-                className="text-text-light_green hover:text-text-green transition-colors"
-            >
-                Pricing
-            </a>
+                <a
+                    href="#"
+                    className="text-text-light_green hover:text-text-green transition-colors"
+                >
+                    Why Us
+                </a>
+                <a
+                    href="#"
+                    className="text-text-light_green hover:text-text-green transition-colors"
+                >
+                    Stories
+                </a>
+                <a
+                    href="#"
+                    className="text-text-light_green hover:text-text-green transition-colors"
+                >
+                    Plans
+                </a>
+                <a
+                    href="/blogs"
+                    className="text-text-light_green hover:text-text-green transition-colors"
+                >
+                    Blogs
+                </a>
             </nav>
             <div className="w-full flex justify-end">
             {/* <Link href="/auth"> */}
