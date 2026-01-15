@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { ThemeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -69,8 +68,8 @@ function Header() {
     }, [isMobileNavOpen]);
 
 return (
-    <header className="absolute w-full z-50">
-        <div className="w-full max-w-[1400px] mx-auto px-4 py-4">
+    <header className="w-full z-50 fixed">
+        <div className="w-full max-w-[1400px] mx-auto px-4 py-4 backdrop-blur-sm bg-background-light/20 ">
             {/* Mobile Layout */}
             <div className="md:hidden flex items-center justify-between">
                 {/* Left - Hamburger Menu */}
@@ -128,6 +127,12 @@ return (
 
                 {/* Center - Desktop Navigation */}
                 <nav className="flex justify-center items-center space-x-8 rounded-2xl p-3 text-md font-bold">
+                    <a
+                        href="#"
+                        className="text-text-light_green hover:text-text-green transition-colors"
+                    >
+                        Feed
+                    </a>
                     <a
                         href="#"
                         className="text-text-light_green hover:text-text-green transition-colors"
@@ -270,7 +275,7 @@ return (
             <div className="p-2">
                 <Button
                     className="w-full bg-text-light_green hover:bg-text-light_green/50 text-background-light rounded-xl py-2"
-                    onClick={() => (window.location.href = "/login")}
+                    onClick={() => (window.location.href = "/auth/login")}
                 >
                     Sign in
                 </Button>

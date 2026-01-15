@@ -52,22 +52,19 @@ return (
                 className="mt-6 max-w-4xl w-full mx-auto"
                 >
                 <Badge
-                    className="bg-text-light_green text-xs md:text-base text-background-light mb-8 shadow-text-light_green overflow-hidden shadow-2xl"
+                    className="bg-background-light text-xs md:text-base text-text-light_green font-semibold py-3 px-5 mb-8 shadow-text-light_green overflow-hidden shadow-2xl border border-text-light_green/20"
                     variant="secondary"
                 >
-                    Students Who Grind.
-                    <span className="bg-background-light text-text-light_green ml-2 p-2 md:p-3 shadow-sm">
-                    Startups That Build
-                    </span>
+                    🔥Trusted by 50+ funded startups
                 </Badge>
                 <motion.h1
                     variants={fadeInUp}
                     className="text-3xl md:text-5xl drop-shadow-sm font-semibold text-text-green mb-6 leading-tight"
                 >
-                    No Free Labor. No Fake Offers.
+                    No More Fake 'Exposure' Internships.
                     <span className="gradient-text md:block text-text-light_green drop-shadow-sm">
                     {" "}
-                    Just Real Internships.
+                    Just Real Work. Real Pay.
                     </span>
                 </motion.h1>
 
@@ -75,10 +72,7 @@ return (
                     variants={fadeInUp}
                     className="text-lg md:text-xl text-text-green mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-sm"
                 >
-                    You're not just “looking for experience", you're building your
-                    future. NoNoMate connects Tier 2/3 students with legit, paid,
-                    skill-based internships at real startups. No fluff. No scams.
-                    Just serious glow-ups.
+                    {`If you're from a Tier 2/3 college and tired of being rejected by companies who only want IIT/NIT grads—welcome home. We connect ambitious builders with startups who value hustle over pedigree. Every internship is paid. Every company is verified. Zero BS.`}
                 </motion.p>
 
                 <motion.div
@@ -90,7 +84,7 @@ return (
                         size="lg"
                         className="bg-background-light text-lg text-text-green"
                     >
-                        Find Internships
+                        Find Your Paid Internship →
                     </Button>
                     </Link>
                     <Link href="/auth">
@@ -98,12 +92,47 @@ return (
                         size="lg"
                         className="bg-text-light_green rounded-xl text-lg px-8 py-6 m-2 shadow-text-light_green text-background-light hover:bg-text-green hover:text-background-light transition-colors"
                     >
-                        Hire Interns
+                        Post Your Opening →
                     </Button>
                     </Link>
                 </motion.div>
                 </motion.div>
             </div>
+
+            {/* Stats */}
+            <section className="mt-20">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8 text-center">
+                <motion.div
+                    variants={fadeInUp}
+                    className="bg-background-light rounded-xl p-6 border border-text-light_green/20 shadow-2xl"
+                >
+                    <h3 className="text-2xl font-bold text-text-green mb-2">50+</h3>
+                    <p className="text-text-green">Verified Startups</p>
+                </motion.div>
+                <motion.div
+                    variants={fadeInUp}
+                    className="bg-background-light rounded-xl p-6 border border-text-light_green/20 shadow-2xl"
+                >
+                    <h3 className="text-2xl font-bold text-text-green mb-2">100+</h3>
+                    <p className="text-text-green">Students Hired</p>
+                </motion.div>
+                <motion.div
+                    variants={fadeInUp}
+                    className="bg-background-light rounded-xl p-6 border border-text-light_green/20 shadow-2xl"
+                >
+                    <h3 className="text-2xl font-bold text-text-green mb-2">₹18.2L</h3>
+                    <p className="text-text-green">Total Stipends Paid Out</p>
+                </motion.div>
+                <motion.div
+                    variants={fadeInUp}
+                    className="bg-background-light rounded-xl p-6 border border-text-light_green/20 shadow-2xl"
+                >
+                    <h3 className="text-2xl font-bold text-text-green mb-2">89%</h3>
+                    <p className="text-text-green">Interview-to-Offer-Rate</p>
+                </motion.div>
+                </div>
+            </section>
+
             </section>
         </motion.div>
         </div>

@@ -8,21 +8,25 @@ import 'swiper/css/pagination';
 
 const testimonials = [
     {
-        name: "Aayush, B.Tech Student",
-        text: "I always struggled to find real, meaningful internships as a student from a tier-3 college. This platform made it simple relevant opportunities, no spam, just value. It feels like someone finally built something for us.",
+        text: "I was applying on Internshala for 4 months—800+ applications, 3 interviews, all unpaid. Joined NoNoMate, got matched with a fintech startup in week one. ₹15k stipend, converted to full-time after 6 months. I'm now making ₹8 LPA. Sometimes one platform changes everything.",
+        name: "Aayush Sharma",
+        details: "B.Tech CSE, Tier-3 College",
     },
     {
-        name: "Tanvi, Startup Founder",
-        text: "Hiring interns used to be chaos. Now, it's organized, fast, and the students actually care. Nonomate helped us hire two rockstar devs who delivered from day one.",
+        text: "We're a 4-person team. Couldn't afford a senior dev. Found a second-year student on NoNoMate who knew React Native cold. Paid him ₹12k/month. He shipped our MVP's core feature in 3 weeks. Now he's employee #2 with equity. Best hire we've made.",
+        name: "Tanvi Mehta",
+        details: "Co-founder, SaasFlow"
     },
     {
-        name: "Rohit, Friend & Beta User",
-        text: "Watched this platform grow from day one, the vision was always clear, connect ambitious students with real-world learning. If you're reading this, you're at the right place.",
+        text: "I mentor 50+ students a semester. Most waste months on fake internship sites. I now tell everyone: if you're serious, try NoNoMate first. The community alone is worth it—I've seen juniors get referrals, freelance projects, even co-founder matches.",
+        name: "Rohit Malhotra",
+        details: "Career Mentor"
     },
     {
-        name: "Neha, Career Mentor",
-        text: "I mentor dozens of students every month, and this is the first tool I genuinely recommend. It's more than just internships, it’s a confidence booster.",
-    }
+        text: "The AI matching is lowkey scary good. I built a Web3 wallet as a side project. Got matched with a DeFi startup the next day because their JD mentioned 'blockchain curious'. They didn't care I was self-taught or that I dropped out. First paycheck hit in 6 days.",
+        name: "Neha Kapoor",
+        details: "Self-taught Dev → Blockchain Intern"
+    },
 ];
 
 export default function Testimonials() {
@@ -35,8 +39,16 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             >
-            What They’re Saying About Us?
+            Real Students. Real Outcomes. Real Talk.
             </motion.h2>
+            <motion.p 
+            className="text-lg md:text-xl text-background-light mb-8"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            >
+            These aren't cherry-picked. This is the group chat energy.
+            </motion.p>
 
             <Swiper
             modules={[Pagination, Autoplay]}
@@ -56,6 +68,7 @@ export default function Testimonials() {
                 >
                     <p className="text-sm md:text-xl text-background-light leading-relaxed text-justify mb-4 italic">"{item.text}"</p>
                     <h4 className="text-xs font-semibold text-background-light">— {item.name}</h4>
+                    <p className="text-xs text-background-light">{item.details}</p>
                 </motion.div>
                 </SwiperSlide>
             ))}

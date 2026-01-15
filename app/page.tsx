@@ -1,14 +1,17 @@
 "use client"
 
 import React from "react"
-import { motion } from "framer-motion"
-import Image from "next/image"
 import Hero from "@/components/Hero"
-import Features from "@/components/Features"
+import Features from "@/components/NoNomateSolution"
 import FAQSection from "@/components/Faqs"
 import Testimonials from "@/components/Testimonials"
 import PricingSection from "@/components/Pricing"
 import Why from "@/components/Why"
+import SocialProofBar from "@/components/SocialProofBar"
+import NoNomateSolution from "@/components/NoNomateSolution"
+import NoNomateBenefits from "@/components/NoNomateStudents"
+import NoNomateStudents from "@/components/NoNomateStudents"
+import NoNomateStartups from "@/components/NoNomateStartups"
 
 export default function LandingPage() {
   return (
@@ -16,11 +19,20 @@ export default function LandingPage() {
       {/* Hero */}
       <Hero/>
 
-      {/* Features */}
-      <Features/>
-      
+      {/* Social Proof Bar */}
+      <SocialProofBar />
+
       {/* Why? */}
       <Why/>
+
+      {/* Nonomate Solution */}
+      <NoNomateSolution/>
+
+      {/* NoNomate Benefits */}
+      <NoNomateStudents/>
+
+      {/* NoNomate Startups */}
+      <NoNomateStartups/>
 
       {/* Testimonials */}
       <Testimonials />

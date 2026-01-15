@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
+import AppLayout from "./AppLayout"
 
 export const metadata: Metadata = {
   title: "NoNoMate - Students who grind. Startups That Build.",
@@ -33,9 +34,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${tenor.variable} font-tenor`} >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <Header/>
-          {children}
-          <Footer/>
+          <AppLayout>
+            {children}
+          </AppLayout>
         </ThemeProvider>
       </body>
     </html>

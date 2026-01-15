@@ -29,10 +29,11 @@ return (
                 <div className="">
                     <TextHoverEffect text="NoNoMate" duration={0.5} automatic={true} />
                 </div>
-                <p className="text-white text-[16px] md:text-[18px] max-w-4xl text-center mx-auto leading-relaxed opacity-90 mb-6">
-                Join thousands of ambitious interns and innovative startups in our
-                community. Get exclusive insights, opportunities, and resources
-                delivered to your inbox.
+                <h1 className="text-lg md:text-xl text-button-text">
+                    Your Move. Stay Stuck or Start Building.
+                </h1>
+                <p className="text-white text-[16px] md:text-[18px] max-w-4xl mx-auto leading-relaxed opacity-90 mb-6 ">
+                999+ students already made the switch. Most of them were exactly where you are right now—tired of fake opportunities, ready for something real.
                 </p>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <div className="flex items-center justify-center gap-2 mb-4">

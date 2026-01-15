@@ -8,42 +8,60 @@ import Image from "next/image";
 const faqData = {
     "For Students": [
         {
-        question: "How do I apply for internships?",
+        question: "Is this actually free for students?",
         answer:
-            "Just sign in, complete your profile, and browse internships. Apply with one click directly from your dashboard.",
+            "Yes! Our Explorer plan is 100% free forever. You can apply to internships, build your profile, and access the community without paying a rupee. We make money by charging startups and offering optional premium features for students—but you never HAVE to pay.",
         },
         {
-        question: "Do I need a resume to apply?",
+        question: "I'm not from CS/IT. Can I still use NoNoMate?",
         answer:
-            "It's recommended, but if you don't have one — NoNoMate provides a free Resume Builder tool to create one in minutes.",
+            "Absolutely! We have internships for designers, content writers, marketers, finance analysts, operations roles, and more. Tech startups need diverse talent—your degree matters less than your ability to learn and deliver.",
         },
         {
-        question: "Is NoNoMate free for students?",
+        question: "Do I need a fancy resume to apply?",
         answer:
-            "Yes! All essential features like internship search, resume tools, and AI career help are free for students.",
+            "Nope. Our AI looks beyond resumes—it analyzes your GitHub, projects, portfolio, and even Twitter if you link it. Some of our best-placed students had no traditional resume, just strong real-world work.",
+        },
+        {
+        question: "What’s the average stipend?",
+        answer:
+            "Most internships pay ₹10–20k/month. Design and development roles usually pay ₹15–25k. Specialized roles like ML, DevOps, or blockchain can go up to ₹30–40k. We do not allow unpaid internships. Period.",
+        },
+        {
+        question: "Can I apply to multiple startups at once?",
+        answer:
+            "Yes, there’s no limit. But quality beats quantity—applying to 5–10 relevant roles gives you a higher match score and better responses than spamming 50 random applications.",
+        },
+        {
+        question: "What if I’m still in first year?",
+        answer:
+            "You’re exactly who we built this for. Many startups on NoNoMate care about potential, not seniority. Some of our youngest hires are first-year students who proved their skills through projects.",
+        },
+        {
+        question: "How long does it take to get hired?",
+        answer:
+            "On average, students receive offers within 18 days of signing up. Some get hired in as little as 3 days, while others take longer by choice. Staying active and keeping your profile updated makes a big difference.",
         },
     ],
+
     "For Startups": [
         {
-        question: "How can I hire interns from NoNoMate?",
+        question: "How do you verify startups aren’t scams?",
         answer:
-            "You can register as an employer and post internship opportunities for free. We'll help match you with ideal candidates.",
+            "Every startup goes through a 5-step verification: registered company details, founder LinkedIn profiles, funding or revenue proof, office address verification, and references from past interns. If they fail any step, they’re rejected. We’ve blocked 2,300+ fake listings so far.",
         },
         {
-        question: "Is there any cost for posting internships?",
-        answer: "No, it's free for startups to post and connect with candidates.",
+        question: "What if a startup hires me and doesn’t pay?",
+        answer:
+            "We use a payment-guarantee system. Startups must deposit the first month’s stipend before posting. If they ghost you, we release the money to you and permanently ban the startup. This has happened only 3 times—and every student got paid.",
         },
     ],
-    "AI Career Tools": [
+
+    "Platform Comparison": [
         {
-        question: "How does the AI assistant help me?",
+        question: "How is NoNoMate different from LinkedIn, Internshala, or AngelList?",
         answer:
-            "It suggests internships, answers career questions, gives resume feedback, and provides custom study plans — all based on your goals.",
-        },
-        {
-        question: "Can I get personalized job alerts?",
-        answer:
-            "Yes! Just sign in and enable alerts in your profile settings to get internship/job updates tailored to your interests.",
+            "LinkedIn favors experienced professionals, Internshala is flooded with unpaid or low-quality listings, and AngelList is U.S.-focused and overwhelming. NoNoMate is built specifically for Indian students and Indian startups—with strict anti-scam checks and built-in mentorship.",
         },
     ],
 };
@@ -62,16 +80,15 @@ export default function FAQSection() {
     };
 
 return (
-    <section className="w-full flex flex-col md:flex-row max-w-7xl h-full md:h-[55rem] mx-auto py-16 px-4 md:px-0" id="faqs">
+    <section className="w-full flex flex-col md:flex-row max-w-7xl h-full mx-auto py-16 px-4 md:px-0" id="faqs">
         {/* 🔥 Vibey Heading */}
         <div className="text-start mb-12 max-w-[32rem] md:pr-6 flex flex-col gap-6 md:gap-0 justify-between">
             <div>
                 <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text">
-                Got Questions? <span className="block">We’ve Got Answers</span>
+                Questions? <span className="block">We’ve Got Answers</span>
                 </h2>
                 <p className="text-text-green mt-4 text-md md:text-lg">
-                Everything you need to know about internships, hiring, and smart
-                career tools — simplified.
+                If it's not here, ask us in Discord—we reply in minutes
                 </p>
             </div>
 
