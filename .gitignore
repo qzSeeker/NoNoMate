@@ -9,7 +9,6 @@
 
 # production
 /build
-/auth
 
 # debug
 npm-debug.log*
