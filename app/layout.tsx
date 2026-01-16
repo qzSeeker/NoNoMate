@@ -31,11 +31,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${tenor.variable} font-tenor`} >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange> */}
           <AppLayout>
             {children}
           </AppLayout>
-        </ThemeProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   )
