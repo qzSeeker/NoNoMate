@@ -48,10 +48,10 @@
 
 @layer utilities {
   .swiper-pagination-bullet {
-    @apply bg-gray-300 !important;
+    @apply bg-[#ecfdf7] !important;
   }
   .swiper-pagination-bullet-active {
-    @apply bg-white !important;
+    @apply bg-[#ecfdf7] !important;
   }
 }
 

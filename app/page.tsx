@@ -2,14 +2,12 @@
 
 import React from "react"
 import Hero from "@/components/Hero"
-import Features from "@/components/NoNomateSolution"
 import FAQSection from "@/components/Faqs"
 import Testimonials from "@/components/Testimonials"
 import PricingSection from "@/components/Pricing"
 import Why from "@/components/Why"
 import SocialProofBar from "@/components/SocialProofBar"
 import NoNomateSolution from "@/components/NoNomateSolution"
-import NoNomateBenefits from "@/components/NoNomateStudents"
 import NoNomateStudents from "@/components/NoNomateStudents"
 import NoNomateStartups from "@/components/NoNomateStartups"
 
