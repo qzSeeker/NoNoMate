@@ -1,20 +1,21 @@
 'use client'
-import { supabase } from "@/lib/supabaseClient";
+// import { supabase } from "@/lib/supabaseClient";
 import { X } from "lucide-react";
 
 export default function Login() {
-    const handleLogin = async (provider: "google" | "github") => {
-        const { error } = await supabase.auth.signInWithOAuth({
-            provider,
-            options: {
-                redirectTo: `${window.location.origin}/auth/callback`,
-            },
-        });
+    // const handleLogin = async (provider: "google" | "github") => {
+    //     const { error } = await supabase.auth.signInWithOAuth({
+    //         provider,
+    //         options: {
+    //             // redirectTo: `${window.location.origin}/auth/callback`,
+    //             redirectTo: `${window.location.origin}/`,
+    //         },
+    //     });
         
-        if (error) {
-            console.error('Login error:', error.message);
-        }
-    };
+    //     if (error) {
+    //         console.error('Login error:', error.message);
+    //     }
+    // };
 
     return (
         <div className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-tl from-text-light_green/60 to-background-light p-4">
@@ -28,14 +29,14 @@ export default function Login() {
 
                 <div className="flex w-full flex-col items-center gap-4 md:p-6">
                     <button 
-                        onClick={() => handleLogin("google")}
+                        // onClick={() => handleLogin("google")}
                         className="bg-background-light text-text-green w-full flex items-center justify-center gap-2 font-medium py-5 px-14 rounded-full shadow-md hover:bg-text-green/10 transition duration-200"
                     >
                         <img src="/login/google-icon-logo-svgrepo-com.svg" alt="google" className="w-4 h-4" />
                         Sign in with Google
                     </button>
                     <button 
-                        onClick={() => handleLogin("github")}
+                        // onClick={() => handleLogin("github")}
                         className="bg-background-light text-text-green w-full flex items-center justify-center gap-2 font-medium py-5 px-14 rounded-full shadow-md hover:bg-text-green/10 transition duration-200"
                     >
                         <img src="/login/apple-black-logo-svgrepo-com.svg" alt="github" className="w-4 h-4" />
