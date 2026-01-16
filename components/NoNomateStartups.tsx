@@ -30,24 +30,24 @@ const NoNomateStartups = () => {
     ];
 
     return (
-        <div className="min-h-screen py-20 px-6">
+        <div className="min-h-screen py-12 md:py-20 px-6">
         <div className="max-w-5xl mx-auto">
             {/* Header */}
             <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-text-green mb-6 leading-tight">
+            <h1 className="text-2xl md:text-3xl font-bold text-text-green mb-6 leading-tight">
                 If You're a Startup That Wants
-                <span className="block mt-2 bg-gradient-to-r from-text-green to-text-light_green bg-clip-text text-transparent">
-                Hungry Talent, Not Pedigree
+                <span className="md:block mt-2 bg-gradient-to-r from-text-green to-text-light_green bg-clip-text text-transparent">
+                {" "}Hungry Talent, Not Pedigree
                 </span>
             </h1>
-            <p className="text-xl md:text-2xl text-text-light_green font-medium max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-text-light_green font-medium max-w-3xl mx-auto">
                 Here's why 280+ founders choose NoNoMate over LinkedIn/Internshala
             </p>
             </div>
 
             {/* Benefits List */}
-            <div className="bg-background-light rounded-3xl shadow-2xl p-8 md:p-12 border border-text-light_green/20 mb-12">
-            <div className="space-y-6">
+            <div className="bg-background-light rounded-3xl shadow-2xl shadow-text-light_green/20 p-2 md:p-12 border border-text-light_green/20 mb-12">
+            <div className="space-y-0 md:space-y-6">
                 {benefits.map((benefit, index) => (
                 <div 
                     key={index}
@@ -98,7 +98,7 @@ const NoNomateStartups = () => {
                 
                 {/* Quote Content */}
                 <div className="flex-1">
-                <p className="text-text-green text-lg md:text-xl font-medium mb-4 leading-relaxed italic">
+                <p className="text-text-green text-md md:text-lg font-medium mb-4 leading-relaxed italic">
                     "We hired our first backend intern through NoNoMate in 2 days. He's now our lead engineer and holds 4% equity."
                 </p>
                 <div className="flex items-center gap-3">
@@ -116,7 +116,7 @@ const NoNomateStartups = () => {
 
             {/* CTA Section */}
             <div className="text-center">
-            <button className="group relative bg-gradient-to-r from-text-green to-text-light_green text-background-light px-10 py-5 rounded-full font-bold text-lg md:text-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200 mb-6">
+            <button className="group relative bg-gradient-to-r from-text-green to-text-light_green text-background-light px-10 py-5 rounded-full font-bold text-sm md:text-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200 mb-6">
                 Post Your First Role Free
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-200">
                 →
@@ -124,7 +124,7 @@ const NoNomateStartups = () => {
             </button>
             
             {/* Trust Signal */}
-            <div className="flex items-center justify-center gap-3 text-text-light_green">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-text-light_green">
                 <svg className="w-5 h-5 text-text-green" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
@@ -135,27 +135,27 @@ const NoNomateStartups = () => {
             </div>
 
             {/* Stats Grid */}
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-background-light rounded-xl p-6 border border-text-light_green/20 text-center">
-                <div className="text-3xl md:text-4xl font-bold text-text-green mb-2">280+</div>
+            <div className="mt-12 grid grid-cols-3 gap-2 md:gap-6">
+            <div className="bg-background-light rounded-xl p-3 md:p-6 border border-text-light_green/20 text-center shadow-2xl shadow-text-light_green/20">
+                <div className="text-xl md:text-3xl font-bold text-text-green mb-2">280+</div>
                 <div className="text-sm text-text-light_green">Active Startups</div>
             </div>
-            <div className="bg-background-light rounded-xl p-6 border border-text-light_green/20 text-center">
-                <div className="text-3xl md:text-4xl font-bold text-text-green mb-2">48hrs</div>
+            <div className="bg-background-light rounded-xl p-3 md:p-6 border border-text-light_green/20 text-center shadow-2xl shadow-text-light_green/20">
+                <div className="text-xl md:text-3xl font-bold text-text-green mb-2">48hrs</div>
                 <div className="text-sm text-text-light_green">Avg. Time to Hire</div>
             </div>
-            <div className="bg-background-light rounded-xl p-6 border border-text-light_green/20 text-center">
-                <div className="text-3xl md:text-4xl font-bold text-text-green mb-2">89%</div>
+            <div className="bg-background-light rounded-xl p-3 md:p-6 border border-text-light_green/20 text-center shadow-2xl shadow-text-light_green/20">
+                <div className="text-xl md:text-3xl font-bold text-text-green mb-2">89%</div>
                 <div className="text-sm text-text-light_green">Retention Rate</div>
             </div>
             </div>
 
             {/* Additional Value Props */}
-            <div className="mt-12 bg-text-green/5 rounded-2xl p-8 border border-text-green/20">
+            <div className="mt-12 bg-text-green/5 rounded-2xl p-6 md:p-8 border border-text-green/20 shadow-2xl shadow-text-light_green/20">
             <h3 className="text-2xl font-bold text-text-green mb-4 text-center">
                 Trusted by Startups From
             </h3>
-            <div className="flex flex-wrap justify-center items-center gap-6 text-text-light_green font-medium">
+            <div className="flex flex-wrap justify-start items-center gap-6 text-text-light_green font-medium">
                 <span className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-text-green" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

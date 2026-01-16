@@ -84,7 +84,7 @@ return (
         {/* 🔥 Vibey Heading */}
         <div className="text-start mb-12 max-w-[32rem] md:pr-6 flex flex-col gap-6 md:gap-0 justify-between">
             <div>
-                <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text">
+                <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text">
                 Questions? <span className="block">We’ve Got Answers</span>
                 </h2>
                 <p className="text-text-green mt-4 text-md md:text-lg">

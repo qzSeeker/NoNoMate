@@ -61,30 +61,30 @@ function Why() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6">
           {cards.map((card) => (
             <div
               key={card.number}
-              className={`relative bg-gradient-to-br ${card.gradient} rounded-2xl p-8 shadow-2xl hover:scale-105 transition-transform duration-300 `}
+              className={`relative bg-gradient-to-br ${card.gradient} rounded-2xl p-4 md:p-8 shadow-2xl shadow-text-light_green/20 hover:scale-105 transition-transform duration-300 `}
             >
               {/* Card Number Badge */}
-              <div className="absolute -top-4 -left-4 w-12 h-12 bg-text-light_green text-background-light rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+              <div className="absolute -top-4 -left-4 w-8 md:w-12 h-8 md:h-12 bg-text-light_green text-background-light rounded-full flex items-center justify-center text-lg md:text-2xl font-bold shadow-lg">
                 {card.number}
               </div>
               
               {/* Card Content */}
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-background-light pt-4">
+              <div className="space-y-3">
+                <h2 className="text-lg md:text-2xl font-bold text-background-light md:pt-4">
                   {card.title}
                 </h2>
                 
                 <div className="border-l-4 border-white/30 pl-4">
-                  <p className="text-background-light text-lg font-medium italic">
+                  <p className="text-background-light text-md md:text-lg font-medium italic">
                     "{card.quote}"
                   </p>
                 </div>
                 
-                <p className="text-background-light/90 text-base leading-relaxed">
+                <p className="text-background-light/90 text-sm md:text-base leading-relaxed">
                   {card.subtext}
                 </p>
               </div>
@@ -98,7 +98,7 @@ function Why() {
             </div>
           ))}
         </div>
-          <h1 className="text-center text-2xl text-text-light_green mt-12">
+          <h1 className="text-center text-lg md:text-xl text-text-light_green mt-12">
             We were tired of this circus. So we built the platform we wish existed when we were grinding.
           </h1>
         </div>

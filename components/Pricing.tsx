@@ -64,7 +64,7 @@ export default function PricingSection() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text"
+            className="text-2xl md:text-3xl font-bold text-center mb-5 md:mb-12 bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text"
             >
             Pick Your Path. Upgrade When You're Ready.
             </motion.h2>
@@ -84,7 +84,7 @@ export default function PricingSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: i * 0.2 }}
-                className={`p-6 rounded-2xl border-2 flex flex-col justify-evenly shadow-2xl shadow-text-light_green/40 ${
+                className={`p-6 rounded-2xl border-2 flex flex-col justify-evenly shadow-2xl shadow-text-light_green/20 ${
                     plan.highlighted
                     ? 'bg-gradient-to-br from-text-light_green/20 to-text-light_green/10 text-text-green border-text-light_green/20 scale-105'
                     : 'bg-transparent border-text-light_green/20 text-text-green'

@@ -97,21 +97,20 @@ function SocialProofBar() {
 
     return (
         <section 
-        className="w-full max-w-7xl relative mx-auto py-16 md:py-20 px-4"
+        className="w-full max-w-7xl relative mx-auto md:py-12 px-4"
         aria-labelledby="social-proof-heading"
         >
         {/* Header Section */}
-        <header className="w-full text-center mb-10 md:mb-14">
+        <header className="w-full text-center mb-4">
             <h1 
             id="social-proof-heading"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight"
+            className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight"
             >
-            <span className="text-text-green block md:inline">
+            <span className="text-text-green">
                 Backed by founders who get it,
             </span>
-            <br/>
-            <span className="text-text-light_green block md:inline mt-2">
-                loved by students who needed it most.
+            <span className="text-text-light_green">
+                {" "}loved by students who needed it most.
             </span>
             </h1>
         </header>
@@ -164,11 +163,6 @@ function SocialProofBar() {
                 </span>
             </div>
             </div>
-
-            {/* Supporting Text */}
-            <p className="text-gray-400 text-sm md:text-base text-center mt-6 md:mt-8">
-            Partnered with world-renowned investors and accelerators
-            </p>
         </div>
 
         </section>

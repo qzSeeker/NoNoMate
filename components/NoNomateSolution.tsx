@@ -67,17 +67,17 @@ const NoNomateSolution = () => {
   ];
 
   return (
-    <div className="min-h-screen py-16 px-6">
+    <div className="min-h-screen py-8 md:py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-text-green mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold text-text-green mb-6">
             How NoNoMate Fixes This
             <span className="block mt-2 bg-gradient-to-r from-text-green to-text-light_green bg-clip-text text-transparent leading-tight">
               Broken System
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-text-light_green mt-6 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-text-light_green mt-6 max-w-3xl mx-auto">
             Not another job board. An ecosystem built for{' '}
             <span className="font-bold text-text-green">underdogs.</span>
           </p>
@@ -88,12 +88,12 @@ const NoNomateSolution = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.number}
-              className="relative bg-background-light rounded-3xl shadow-2xl overflow-hidden border border-text-light_green/20 hover:shadow-3xl transition-shadow duration-300"
+              className="relative bg-background-light rounded-3xl shadow-2xl shadow-text-light_green/20 overflow-hidden border border-text-light_green/20 hover:shadow-3xl transition-shadow duration-300"
             >
               <div className="relative z-10 p-8 md:p-12">
                 {/* Feature Number & Badge */}
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-text-green to-text-light_green rounded-full flex items-center justify-center text-background-light font-bold text-xl">
+                  <div className="flex-shrink-0 w-8 md:w-12 h-8 md:h-12 bg-gradient-to-r from-text-green to-text-light_green rounded-full flex items-center justify-center text-background-light font-bold text-lg md:text-xl">
                     {feature.number}
                   </div>
                   <div className="inline-flex items-center gap-2 text-background-light bg-gradient-to-r from-text-green to-text-light_green px-4 py-2 rounded-full text-sm font-semibold">
@@ -138,14 +138,14 @@ const NoNomateSolution = () => {
 
         {/* CTA Section */}
         <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-r from-text-green to-text-light_green rounded-2xl p-8 shadow-xl">
+          <div className="inline-block bg-gradient-to-r from-text-green to-text-light_green rounded-2xl p-8 shadow-2xl shadow-text-light_green/20">
             <h3 className="text-2xl md:text-3xl font-bold text-background-light mb-4">
               Ready to Join the Underdog Revolution?
             </h3>
             <p className="text-background-light/90 mb-6 max-w-2xl">
               Stop wasting time on platforms that don't care. Start building your future with NoNoMate.
             </p>
-            <button className="bg-background-light text-text-green px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-200 shadow-lg">
+            <button className="bg-background-light text-text-green px-8 py-4 rounded-full font-bold text-md md:text-lg hover:scale-105 transition-transform duration-200 shadow-lg">
               Get Started Free →
             </button>
           </div>
