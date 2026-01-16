@@ -50,7 +50,7 @@ const NoNomateStudents = () => {
         </div>
 
         {/* Benefits List */}
-        <div className="bg-background-light rounded-3xl shadow-2xl p-3 md:p-12 border border-text-light_green/20 mb-12">
+        <div className="bg-background-light rounded-3xl shadow-2xl shadow-text-light_green/20 p-3 md:p-12 border border-text-light_green/20 mb-12">
           <div className="space-y-2 md:space-y-6">
             {benefits.map((benefit, index) => (
               <div 
