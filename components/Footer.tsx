@@ -24,7 +24,7 @@ function Footer() {
 return (
     <div className="bg-text-light_green w-full">
         <div className="flex flex-col items-center gap-6 justify-center px-4 relative max-w-[1400px] mx-auto">
-            <div className="mt-10 w-full flex items-center justify-between gap-8 bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20">
+            <div className="mt-10 w-full flex flex-col md:flex-row items-center justify-between gap-8 bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20">
                     <p className="text-center text-background-light">
                     © {new Date().getFullYear()} NoNoMate. All rights reserved.
                     </p>
