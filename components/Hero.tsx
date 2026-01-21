@@ -33,7 +33,7 @@ return (
             duration: 0.8,
             ease: "easeInOut",
             }}
-            className="relative flex flex-col gap-4 items-center justify-center px-4"
+            className="relative flex flex-col gap-4 items-center justify-center px-4 top-6"
         >
             {/* Hero Section */}
             <section className="pt-[5.5rem] md:pt-[9rem] pb-20">
@@ -86,7 +86,7 @@ return (
                     variants={fadeInUp}
                     className="text-lg md:text-xl text-text-green mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-sm"
                 >
-                    {`Every startup verified. Every internship paid. Connect with founders who hire based on skills, not college names.`}
+                    {`We manually review startups and focus on real, paid internships. Built to protect students from fake offers and ghosting.`}
                 </motion.p>
 
                 <motion.div
@@ -98,7 +98,7 @@ return (
                         size="lg"
                         className="bg-background-light text-md md:text-lg py-4 text-text-green"
                     >
-                        Find Your Paid Internship →
+                        Get Started (Free)
                     </Button>
                     </Link>
                     <Link href="/auth">
@@ -106,15 +106,24 @@ return (
                         size="lg"
                         className="bg-text-light_green rounded-xl text-md md:text-lg px-8 py-4 m-2 shadow-text-light_green text-background-light hover:bg-text-green hover:text-background-light transition-colors"
                     >
-                        Post Your Opening →
+                        {`I'm a Startup →`}
                     </Button>
                     </Link>
                 </motion.div>
                 </motion.div>
+
+                <motion.div
+                    variants={fadeInUp}
+                    className="mt-12 max-w-4xl mx-auto"
+                >
+                    <p className="text-text-green">
+                        {`No spam. No fake HRs. Profiles reviewed before approval.`}
+                    </p>
+                </motion.div>
             </div>
 
             {/* Stats */}
-            <section className="mt-20">
+            {/* <section className="mt-20">
                 <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-8 text-center">
                 <motion.div
                     variants={fadeInUp}
@@ -145,7 +154,7 @@ return (
                     <p className="text-text-green text-sm md:text-base">Interview-to-Offer-Rate</p>
                 </motion.div>
                 </div>
-            </section>
+            </section> */}
 
             </section>
         </motion.div>

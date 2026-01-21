@@ -5,54 +5,28 @@ const pricingPlans = [
     {
         name: 'Explorer',
         price: '₹0',
-        description: 'For students just getting started',
+        description: 'For students exploring internships seriously',
         features: [
-        'Apply to unlimited verified internships',
-        'Build your public profile',
-        'Basic AI matching',
-        'Community Discord access',
-        'Weekly newsletter with new postings',
-        'Resume builder (basic templates)',
+            'Apply to verified startup internships',
+            'Create a public student profile',
+            'Basic matching based on skills',
+            'Access to open opportunities',
         ],
-        bestfor: 'Students exploring what\'s out there',
-        highlighted: false,
-        cta: 'Get Started for Free'
+        cta: 'Start Free'
     },
     {
         name: 'Connector',
         price: '₹199/month',
-        description: 'For students ready to stand out',
+        description: 'For students who want higher signal and visibility',
         features: [
-        'Everything in Explorer, PLUS:',
-        'Priority in search results (10x more views)',
-        'Direct message startups',
-        'Advanced AI matching (considers projects, not just skills)',
-        'Resume reviews by senior devs (2 per month)',
-        'Early access to new postings (24 hours before free users)',
-        'Monthly 1-on-1 career call',
-        'Premium support (response in 4 hours)',
+            'Everything in Explorer',
+            'Profile shown higher to startups',
+            'Ability to message startups first',
+            'Early access to selected roles',
+            'Manual profile review (when available)',
         ],
-        bestfor: 'Students serious about landing an offer fast',
         highlighted: true,
         cta: 'Upgrade to Connector'
-    },
-    {
-        name: 'Trailblazer',
-        price: '₹499/mo',
-        description: 'For students building legendary careers',
-        features: [
-        'Everything in Connector, PLUS:',
-        'Guaranteed interview requests (apply to 3 dream startups, we ensure they review you)',
-        'Monthly live AMA with funded founders',
-        'Exclusive project briefs (paid freelance gigs from our startup network)',
-        'Priority support (response in 1 hour)',
-        'Custom portfolio website builder',
-        'Access to premium skill-building workshops',
-        'Lifetime alumni network access'
-        ],
-        bestfor: 'Ambitious builders who want the VIP treatment',
-        highlighted: false,
-        cta: 'Go Trailblazer'
     },
 ];
 
@@ -66,7 +40,7 @@ export default function PricingSection() {
             transition={{ duration: 0.6 }}
             className="text-2xl md:text-3xl font-bold text-center mb-5 md:mb-12 bg-gradient-to-r from-text-green to-text-light_green text-transparent bg-clip-text"
             >
-            Pick Your Path. Upgrade When You're Ready.
+            Simple pricing. No hidden incentives.
             </motion.h2>
             <motion.p
                 initial={{ opacity: 0, y: 30 }}
@@ -77,13 +51,13 @@ export default function PricingSection() {
                     Every plan includes verified internships. No hidden fees. Cancel anytime.
             </motion.p>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 relative">
             {pricingPlans.map((plan, i) => (
                 <motion.div
                 key={plan.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.2 }}
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                transition={{ duration: 0.4}}
                 className={`p-6 rounded-2xl border-2 flex flex-col justify-evenly shadow-2xl shadow-text-light_green/20 ${
                     plan.highlighted
                     ? 'bg-gradient-to-br from-text-light_green/20 to-text-light_green/10 text-text-green border-text-light_green/20 scale-105'
@@ -120,7 +94,7 @@ export default function PricingSection() {
                     Not sure? Start free. 89% of our paid users started with Explorer.
                 </h1>
                 <p className='text-md md:text-lg text-text-light_green'>
-                    Try any paid plan for 14 days. If you don't get at least 2 quality matches, we'll refund you fully.
+                    Try any paid plan for 14 days. Cancel anytime. No long-term commitment.
                 </p>
             </div>
 

@@ -16,30 +16,30 @@ function Why() {
     {
       number: 1,
       title: "The Ghost Zone",
-      quote: "Applied to 300+ internships. Got 2 replies. Both were unpaid.",
-      subtext: "Sound familiar?",
-      gradient: "from-text-light_green to-background-light"
+      quote: "Applied to 300+ internships. Got 2 replies. Both unpaid.",
+      subtext: "Ghosting shouldn’t be part of the hiring process.",
+      gradient: "from-text-light_green to-background-light/50"
     },
     {
       number: 2,
       title: "The Exposure Scam",
       quote: "'Great opportunity for learning!'",
-      subtext: "Translation: We want free labor and won't teach you anything.",
-      gradient: "from-text-light_green to-background-light"
+      subtext: "Translation: Unpaid work with unclear learning or mentorship.",
+      gradient: "from-text-light_green to-background-light/50"
     },
     {
       number: 3,
       title: "The IIT Filter",
       quote: "Your portfolio has 6 live projects.",
-      subtext: "But your college name ends the conversation before it starts.",
-      gradient: "from-text-light_green to-background-light"
+      subtext: "Skill matters. But often, college names decide before skills are seen.",
+      gradient: "from-text-light_green to-background-light/50"
     },
     {
       number: 4,
       title: "The Fake Listing",
       quote: "Company doesn't exist. Founder's LinkedIn is fake.",
-      subtext: "But hey, at least you wasted 3 hours on the assessment.",
-      gradient: "from-text-light_green to-background-light"
+      subtext: "Hours spent on assignments for companies that don’t exist..",
+      gradient: "from-text-light_green to-background-light/50"
     }
   ];
 
@@ -53,15 +53,15 @@ function Why() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-2xl md:text-3xl text-text-light_green font-bold mb-4">We Built 
-              <span className="text-text-green"> This Because We've Been There</span>
+            <h2 className="text-2xl md:text-3xl text-text-light_green font-bold mb-4">We built NonoMate  
+              <span className="text-text-green"> after facing this ourselves</span>
             </h2>
             <p className="text-lg md:text-xl text-text-green max-w-2xl mx-auto">
-              Tired of these? You're not alone.
+              {`If you’ve experienced any of these, you’re not imagining it.`}
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-6 md:gap-12">
           {cards.map((card) => (
             <div
               key={card.number}
@@ -74,17 +74,17 @@ function Why() {
               
               {/* Card Content */}
               <div className="space-y-3">
-                <h2 className="text-lg md:text-2xl font-bold text-background-light md:pt-4">
+                <h2 className="text-lg md:text-xl font-bold text-background-light md:pt-4">
                   {card.title}
                 </h2>
                 
                 <div className="border-l-4 border-white/30 pl-4">
                   <p className="text-background-light text-md md:text-lg font-medium italic">
-                    "{card.quote}"
+                    {card.quote}
                   </p>
                 </div>
                 
-                <p className="text-background-light/90 text-sm md:text-base leading-relaxed">
+                <p className="text-background-light text-sm md:text-base leading-relaxed">
                   {card.subtext}
                 </p>
               </div>
@@ -98,8 +98,12 @@ function Why() {
             </div>
           ))}
         </div>
-          <h1 className="text-center text-lg md:text-xl text-text-light_green mt-12">
-            We were tired of this circus. So we built the platform we wish existed when we were grinding.
+          <h1 className="text-center text-xl md:text-2xl text-text-green mt-12">
+            {`We were tired of this system.`}
+            <br/>
+            <span className='text-text-light_green'>
+            {`So we built the platform we wish existed when we were students.`}
+            </span>
           </h1>
         </div>
       </section>

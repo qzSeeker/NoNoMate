@@ -69,7 +69,7 @@ function Header() {
 
 return (
     <header className="w-full z-50 fixed">
-        <div className="w-full max-w-[1400px] mx-auto px-4 py-4 backdrop-blur-sm bg-background-light/20 ">
+        <div className="w-full mx-auto px-4 py-4 backdrop-blur-sm bg-background-light/20 ">
             {/* Mobile Layout */}
             <div className="md:hidden flex items-center justify-between">
                 {/* Left - Hamburger Menu */}
@@ -112,7 +112,7 @@ return (
             </div>
 
             {/* Desktop Layout */}
-            <div className="hidden md:grid grid-cols-3 items-center">
+            <div className="hidden md:grid grid-cols-3 items-center max-w-7xl mx-auto">
                 {/* Left - Logo */}
                 <motion.div
                     className="flex items-center space-x-2"

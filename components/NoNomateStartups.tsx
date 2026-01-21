@@ -8,20 +8,20 @@ interface StartupBenefit {
 const NoNomateStartups = () => {
     const benefits: StartupBenefit[] = [
         {
-        text: "Pre-vetted candidates only",
-        highlight: "Every student has completed projects, passed our skill assessments, and been background checked. You're not sorting through 500 spam applications."
+        text: "Structured",
+        highlight: "profiles with projects, skills, and availability clearly visible."
         },
         {
-        text: "Hire within 48 hours",
-        highlight: "Post a role. Get 10-15 matches in your inbox by next morning. Interview the best 3-5. Hire by end of week."
+        text: "Faster",
+        highlight: "shortlisting by avoiding irrelevant applications."
         },
         {
         text: "Budget-friendly pricing",
         highlight: "You're a startup. We get it. Students on NoNoMate are realistic about stipends if the learning is real. Fair terms for both sides."
         },
         {
-        text: "Retention support",
-        highlight: "We check in with both parties at week 2, month 1, and month 3. If something's off, we mediate. Our 89% intern retention rate isn't luck."
+        text: "We encourage",
+        highlight: "clear expectations and check-ins to reduce drop-offs."
         },
         {
         text: "Community vouches for you",
@@ -35,9 +35,9 @@ const NoNomateStartups = () => {
             {/* Header */}
             <div className="text-center mb-16">
             <h1 className="text-2xl md:text-3xl font-bold text-text-green mb-6 leading-tight">
-                If You're a Startup That Wants
+                For startups that care about 
                 <span className="md:block mt-2 bg-gradient-to-r from-text-green to-text-light_green bg-clip-text text-transparent">
-                {" "}Hungry Talent, Not Pedigree
+                {" "}skills, not pedigree
                 </span>
             </h1>
             <p className="text-lg md:text-xl text-text-light_green font-medium max-w-3xl mx-auto">
@@ -99,7 +99,7 @@ const NoNomateStartups = () => {
                 {/* Quote Content */}
                 <div className="flex-1">
                 <p className="text-text-green text-md md:text-lg font-medium mb-4 leading-relaxed italic">
-                    "We hired our first backend intern through NoNoMate in 2 days. He's now our lead engineer and holds 4% equity."
+                    “We hired our first backend intern through NonoMate. The process was simple and fast.”
                 </p>
                 <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-gradient-to-br from-text-green to-text-light_green rounded-full flex items-center justify-center text-background-light font-bold text-lg">
@@ -107,7 +107,6 @@ const NoNomateStartups = () => {
                     </div>
                     <div>
                     <p className="text-text-green font-bold">Rohan M.</p>
-                    <p className="text-text-light_green text-sm">Founder of FinVault (Series A)</p>
                     </div>
                 </div>
                 </div>
@@ -117,7 +116,7 @@ const NoNomateStartups = () => {
             {/* CTA Section */}
             <div className="text-center">
             <button className="group relative bg-gradient-to-r from-text-green to-text-light_green text-background-light px-10 py-5 rounded-full font-bold text-sm md:text-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200 mb-6">
-                Post Your First Role Free
+                {`Post Your First Role (Free)`}
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-200">
                 →
                 </span>
@@ -129,13 +128,13 @@ const NoNomateStartups = () => {
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
                 <p className="text-base md:text-lg font-medium">
-                No payment until you make your first hire.
+                No payment required to post.
                 </p>
             </div>
             </div>
 
             {/* Stats Grid */}
-            <div className="mt-12 grid grid-cols-3 gap-2 md:gap-6">
+            {/* <div className="mt-12 grid grid-cols-3 gap-2 md:gap-6">
             <div className="bg-background-light rounded-xl p-3 md:p-6 border border-text-light_green/20 text-center shadow-2xl shadow-text-light_green/20">
                 <div className="text-xl md:text-3xl font-bold text-text-green mb-2">280+</div>
                 <div className="text-sm text-text-light_green">Active Startups</div>
@@ -148,10 +147,10 @@ const NoNomateStartups = () => {
                 <div className="text-xl md:text-3xl font-bold text-text-green mb-2">89%</div>
                 <div className="text-sm text-text-light_green">Retention Rate</div>
             </div>
-            </div>
+            </div> */}
 
             {/* Additional Value Props */}
-            <div className="mt-12 bg-text-green/5 rounded-2xl p-6 md:p-8 border border-text-green/20 shadow-2xl shadow-text-light_green/20">
+            {/* <div className="mt-12 bg-text-green/5 rounded-2xl p-6 md:p-8 border border-text-green/20 shadow-2xl shadow-text-light_green/20">
             <h3 className="text-2xl font-bold text-text-green mb-4 text-center">
                 Trusted by Startups From
             </h3>
@@ -181,7 +180,7 @@ const NoNomateStartups = () => {
                 Bootstrapped Winners
                 </span>
             </div>
-            </div>
+            </div> */}
         </div>
         </div>
     );

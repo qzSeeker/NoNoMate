@@ -8,30 +8,25 @@ import 'swiper/css/pagination';
 
 const testimonials = [
     {
-        text: "I was applying on Internshala for 4 months—800+ applications, 3 interviews, all unpaid. Joined NoNoMate, got matched with a fintech startup in week one. ₹15k stipend, converted to full-time after 6 months. I'm now making ₹8 LPA. Sometimes one platform changes everything.",
-        name: "Aayush Sharma",
-        details: "B.Tech CSE, Tier-3 College",
+        text: "What stood out was the clarity. Fewer applications, real conversations, and no confusion about expectations. It felt slower than mass applying, but much more focused.",
+        name: "Final-year CS student",
+        details: "Tier-3 college"
     },
     {
-        text: "We're a 4-person team. Couldn't afford a senior dev. Found a second-year student on NoNoMate who knew React Native cold. Paid him ₹12k/month. He shipped our MVP's core feature in 3 weeks. Now he's employee #2 with equity. Best hire we've made.",
-        name: "Tanvi Mehta",
-        details: "Co-founder, SaasFlow"
+        text: "We didn’t get hundreds of applications, and that was the best part. Profiles were clearer and people actually read the role before applying.",
+        name: "Early-stage founder",
+        details: "SaaS startup"
     },
     {
-        text: "I mentor 50+ students a semester. Most waste months on fake internship sites. I now tell everyone: if you're serious, try NoNoMate first. The community alone is worth it—I've seen juniors get referrals, freelance projects, even co-founder matches.",
-        name: "Rohit Malhotra",
-        details: "Career Mentor"
-    },
-    {
-        text: "The AI matching is lowkey scary good. I built a Web3 wallet as a side project. Got matched with a DeFi startup the next day because their JD mentioned 'blockchain curious'. They didn't care I was self-taught or that I dropped out. First paycheck hit in 6 days.",
-        name: "Neha Kapoor",
-        details: "Self-taught Dev → Blockchain Intern"
+        text: "Students using NonoMate seem more intentional. Less panic applying, more thinking about fit and learning.",
+        name: "Industry mentor",
+        details: "Works with early-career developers"
     },
 ];
 
 export default function Testimonials() {
     return (
-        <section className="my-12 py-20 px-6 md:px-12 bg-text-light_green">
+        <section className="my-12 py-20 px-6 md:px-12 bg-gradient-to-br from-text-green to-text-light_green">
         <div className="max-w-5xl mx-auto text-center">
             <motion.h2 
             className="text-2xl md:text-3xl font-bold text-background-light mb-8"
@@ -39,7 +34,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             >
-            Real Students. Real Outcomes. Real Talk.
+            Early users sharing their experience
             </motion.h2>
             <motion.p 
             className="text-lg md:text-xl text-background-light mb-8"
@@ -47,7 +42,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             >
-            These aren't cherry-picked. This is the group chat energy.
+            What people noticed after switching to NonoMate
             </motion.p>
 
             <Swiper
