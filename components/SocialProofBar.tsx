@@ -101,22 +101,17 @@ function SocialProofBar() {
         aria-labelledby="social-proof-heading"
         >
         {/* Header Section */}
-        <header className="w-full text-center mb-4">
+        <header className="w-full text-center">
             <h1 
             id="social-proof-heading"
-            className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight"
+            className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-text-light_green leading-tight"
             >
-            <span className="text-text-green">
-                Backed by founders who get it,
-            </span>
-            <span className="text-text-light_green">
-                {" "}loved by students who needed it most.
-            </span>
+            {`Built for students and early-stage startups in India 🇮🇳`}
             </h1>
         </header>
 
         {/* Trusted By Section */}
-        <div 
+        {/* <div 
             className="bg-white/5 rounded-2xl p-6 md:p-8 border border-gray-200/10"
             aria-describedby="trusted-companies-description"
         >
@@ -128,42 +123,34 @@ function SocialProofBar() {
                 Trusted by startups funded by
             </p>
             
-            {/* Company Logos */}
             <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-                {/* Sequoia Logo */}
                 <div 
                 className="relative group"
                 title="Sequoia Capital"
                 >
                 <SequoiaLogo />
-                {/* <div className="absolute inset-0 border-2 border-transparent group-hover:border-text-light_green/20 rounded-lg transition-all duration-300" /> */}
                 </div>
                 
-                {/* Y Combinator */}
                 <div 
                 className="relative group"
                 title="Y Combinator"
                 >
                 <CompanyLogo company={featuredCompanies[0]} />
-                {/* <div className="absolute inset-0 border-2 border-transparent group-hover:border-text-light_green/20 rounded-lg transition-all duration-300" /> */}
                 </div>
 
-                {/* Accel */}
                 <div 
                 className="relative group"
                 title="Accel"
                 >
                 <CompanyLogo company={featuredCompanies[1]} />
-                {/* <div className="absolute inset-0 border-2 border-transparent group-hover:border-text-light_green/20 rounded-lg transition-all duration-300" /> */}
                 </div>
 
-                {/* Additional Companies Indicator */}
                 <span className="text-text-light_green text-lg md:text-xl font-medium italic">
                 and many more...
                 </span>
             </div>
             </div>
-        </div>
+        </div> */}
 
         </section>
     );
